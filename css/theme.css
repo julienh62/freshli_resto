@@ -1,0 +1,622 @@
+/* *****************************************************************
+Tools
+***************************************************************** */
+
+* {
+	box-sizing: border-box;
+	/* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */
+}
+
+html {
+	font-size: 62.5%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+:root {
+	/*déclaration des variables*/
+	/*--nom_de_variable: valeur*/
+	--couleur-bandeau: #00748d;
+	--orange: #cb8404;
+	--fond: #eedfdf;
+	--fonce: #4d4342;
+}
+
+/* GENERALITE//////////**********************/
+
+/**********************************/
+
+body {
+	font-size: 1.8rem;
+	font-family: 'Numito', sans-serif;
+	color: #101936;
+	background: #fbfaf8;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	margin: 0 auto;
+	display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+nav,
+.logo strong {
+	font-family: 'Fjalla One', sans-serif;
+	text-align: center;
+
+}
+
+p {
+	margin: 0 0 3rem 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+/* ////////////////////////////////////////////////
+ header
+ ///////////////////////////////////////////////////*/
+
+header {
+	/*	https://cssgradient.io
+ */
+	background: rgb(208, 198, 189);
+	background: linear-gradient(180deg, rgba(208, 198, 189, 1) 0%, rgba(208, 198, 176, 1) 5%, rgba(251, 250, 248, 1) 16%);
+}
+
+
+
+header div nav {
+	display: flex;
+	flex-direction: column;
+
+}
+
+header div nav a img {
+	height: 150px;
+	width: 150px;
+	padding-top: 1rem;
+
+
+}
+
+header div nav a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+}
+
+.logo strong {
+	color: #000;
+	font-size: 2.2rem;
+	font-weight: normal;
+	padding-top: 2rem;
+
+}
+
+
+
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	padding: 0;
+	font-size: 2rem;
+	background: #ebe2db;
+}
+
+nav ul li {
+	border-bottom: 1px solid black;
+
+	padding: 1rem;
+}
+
+nav ul li:hover {
+	background: var(--fonce);
+}
+
+nav ul li a {
+	color: var(--fonce);
+}
+
+nav ul li a:hover {
+	color: #fff;
+
+}
+
+
+/*
+.current,
+nav ul li a:hover {
+	background-color: var(--fonce);
+	color: #fff;
+	padding: 1rem 2rem;
+	
+}/*
+
+/*******************************************
+                 MAIN  accueil
+*************************************/
+
+.introduction {
+	margin: auto 0;
+}
+
+.introduction h1 {
+	font-size: 2.3em;
+
+}
+
+.introduction p {
+
+	font-size: 2.2rem;
+	margin-left: .5rem;
+}
+
+.slick-prev {
+	z-index: 5;
+	left: 15px;
+}
+
+.slick-next {
+	z-index: 5;
+	right: 35px;
+}
+
+.slick-prev aria-label {}
+
+
+
+.slick-prev:before {
+	content: '←';
+	color: #faf9f7;
+	display: block;
+	font-size: 4rem
+}
+
+.slick-next:before {
+	content: '→';
+	color: #faf9f7;
+	display: block;
+	font-size: 4rem
+}
+
+/**********************************
+              about
+//////////////////////////////////*/
+
+video {
+	width: 100%;
+}
+
+.dining {
+	text-align: center;
+}
+
+
+
+/*  ////////////////////////////////////////////////////
+                   accueil      article
+    /////////////////////// ///////////////*/
+
+.menu h2 {
+	font-size: 2.3em;
+	color: #010001;
+}
+
+.menu h3 {
+	font-size: 2em;
+	text-align: center;
+	color: #010001;
+
+}
+
+.menu article {
+	background: #ebe2db;
+	padding: 1rem;
+	margin-top: 3rem;
+}
+
+
+
+.menu article figure img {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+.menu article figcaption {}
+
+
+
+
+.logos {
+	color: #fff;
+	background-color: #4d4342;
+	display: flex;
+	justify-content: center;
+	padding: 2rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.menu article a img {
+	background-color: #4d4342;
+}
+
+.logos strong {
+	color: #fff;
+	margin-top: 1rem;
+}
+
+
+/*****************************************
+                      footer
+***************************************/
+
+footer {
+	padding: 1.5rem;
+	margin: 4rem 1rem 1rem 1rem;
+}
+
+.coordonnees {
+	position: relative;
+	padding: 1.5rem;
+}
+
+.coordonnees::after {
+	content: "";
+	background-image: url(../img/footer-bg.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.9;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.perso {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
+}
+
+.perso ul li,
+.perso p,
+h2,
+h3 {
+	text-align: center;
+	color: #fff;
+}
+
+.perso h2,
+h3 {
+	color: #fff;
+	font-weight: 300;
+}
+
+.ico {
+	display: flex;
+	justify-content: center;
+
+}
+
+.ico .fab {
+	font-size: 2.5rem;
+	color: #e9e4de;
+	padding: .2rem .4rem .2rem .4rem;
+}
+
+.licence {
+	background: #444444;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center
+}
+
+.licence img {
+	width: 40%;
+	padding: 1rem;
+}
+
+.licence a {
+	color: #fff;
+
+}
+
+.licence p {
+	line-height: 2.5rem;
+	line-height: 2.5rem;
+	color: #fff;
+	width: 80%;
+	margin: auto;
+	font-size: 1.6rem;
+	padding: 1rem;
+}
+
+/********footer**about********************/
+
+.abouts {
+	padding: 0rem;
+	margin: 0;
+}
+
+
+
+
+/****************************************
+
+version   Tablette
+
+/************************************/
+
+@media screen and (min-width:780px) {
+
+
+	header div nav {}
+	header div nav a img {
+		height: 250px;
+		width: 250px;
+	}
+
+	header div nav a {}
+
+	.logo strong {
+		font-size: 3rem;
+		/* margin-bottom: 19rem; */
+		margin-top: 3rem;
+		/* padding-top: 1rem; */
+	}
+
+	nav ul {
+		list-style: none;
+		padding: 0;
+		font-size: 2rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	header div nav ul li {
+		border: none;
+	}
+
+	/***********about section*et images*dining****************/
+	.about {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	video {
+		margin: auto 0;
+		width: 80%;
+	}
+	.dining {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.dining1 {
+		width: 45%;
+		padding: 1rem;
+	}
+
+
+	/**********************************************/
+	/*****************footer**************/
+	.perso {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around
+	}
+
+
+
+
+
+
+
+	/*********************FLEX WRAP*********************
+  IL FAUT ABSOLUMENT METTRE WIDTH AVEC FLEX WRAP */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************
+
+/*             version DESKTOP /
+
+/************************************/
+
+@media screen and (min-width:1200px) {
+
+	.container {
+		max-width: 1200px;
+	}
+
+
+	header div nav {
+		margin-left: -10rem;
+		flex-direction: row;
+
+	}
+
+
+	header div nav a {
+		flex-direction: row;
+	}
+
+	.logo strong {
+
+		margin: auto;
+	}
+	header div nav a img {
+		padding: 2rem;
+		margin-left: -12rem;
+	}
+
+
+
+	body>header>div>nav>a>strong {
+		margin: 10rem 7rem 6rem 4rem;
+		font-size: 2.2rem;
+	}
+
+	nav ul {
+		padding: 0;
+		display: flex;
+		font-size: 2rem;
+		background: none;
+
+	}
+	header div nav ul li a {
+		padding: 1rem 1rem;
+		display: inline;
+		font-size: 3rem;
+
+	}
+	nav ul li {
+		margin: auto 0;
+	}
+
+	nav ul {
+		display: flex;
+		list-style: none;
+		padding: 0;
+		font-size: 2rem;
+	}
+
+
+	/***********fin header***************************/
+	.introduction {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.menus {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.menus article {
+		width: 30%;
+		padding: 2rem;
+	}
+
+	article ul li {
+		margin: 2rem 1rem 1rem 1rem;
+		font-size: 2rem;
+	}
+	.menu article a {
+		padding: .5rem;
+	}
+
+	/*	.logo strong {
+		margin: 3rem 7rem 6rem 4rem;
+		font-size: 3rem;
+	}*/
+	.menu article a img {
+		width: 50px;
+		height: 50px;
+		margin-top: .5rem;
+	}
+
+
+	.menu article figure {
+		position: relative;
+		margin: 0;
+	}
+
+	.logos strong {
+		margin-top: 1.5rem;
+		font-size: 2rem;
+	}
+	.logos img {
+		margin-top: 1.5rem;
+
+	}
+
+	.menu article figure img {
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.menu article figcaption {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		text-align: center;
+		/*centre lecontenu test span elmnt enfant  */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+		transition: opacity 0.5s ease;
+		z-index: 5;
+
+	}
+	.menu article figcaption span {
+		padding: .5rem;
+	}
+	.menu article figcaption:hover {
+		opacity: 1;
+		background-color: rgba(0, 0, 0, 0.4);
+		color: #fff;
+	}
+	.menu article figcaption::before {
+		content:"";
+		border:solid 1px #fff;
+		margin:1rem;
+	top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+	}
+
+		.licence img {
+			width: 70%;
+
+		}
+
+	}

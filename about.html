@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="resto">
+    <title>freshly resto about</title>
+    <!-- css slider    ne pas oublier link jqueries en fin de body-->
+    <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css">
+
+
+
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <!--style-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+						<img src="img/logo.png" alt="logo">
+						<strong>Freshlysg restaurant</strong>
+					</a>
+                <ul>
+                    <li><a href="#" class="current">Home</a> </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="https://julienhennebo.sites.3wa.io/integration/module-3/9-archiDesign/actualites.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+
+        <section class="about">
+            <h1>About us</h1>
+
+            <p>Welcome to Freshly Restaurant, a classic New York City restaurant, owned by legendary restaurateur Ted Battely. Here the charm of old New York meets 21st century modernity. In a historic building that has housed a destination restaurant since
+                the 1930s, Freshly Restaurant today welcomes a convivial and urbane clientele.</p>
+
+            <p>Freshly Restaurant offers superb contemporary American cuisine, warm, polished service and beautiful rooms suitable for a wide range of events.</p>
+            <video width="320" height="240" controls autoplay>
+      <source src="ressources/cooking.mp4" type=video/mp4>
+    </video>
+
+        </section>
+
+        <section class="private">
+            <h2>Private dining</h2>
+            <p>Elegant and timeless, Freshly Restaurant features four private dining areas that offer real versatility, whether you are having an intimate birthday dinner for friends or using the entire townhouse for a wedding celebration or corporate event.</p>
+            <p>Make new memories in our unforgettable private dining rooms. With options for lunches, presentations, seated dinners, or cocktail receptions, private dining at Patroon is the perfect opportunity to create your own personal midtown oasis.</p>
+            <p>Whether you are nestled in one of our more intimate rooms for a celebratory dinner or taking over our entire restaurant for a wedding or special occasion, Freshly Restaurant is the perfect setting for a unique, undeniably New York event.</p>
+
+        </section>
+        <div class="dining">
+            <div class="dining1">
+                <img src="img/dining-1.jpg" alt="dining">
+                <p>Can welcome up to 18 guests</p>
+            </div>
+            <div class="dining1">
+                <img src="img/dining-2.jpg" alt="dining">
+                <p>Can welcome up to 24 guests</p>
+            </div>
+            <div class="dining1">
+                <img src="img/dining-3.jpg" alt="dining">
+                <p>Can welcome up to 36 guests</p>
+            </div>
+            <div class="dining1">
+                <img src="img/dining-4.jpg" alt="dining">
+                <p>Can welcome up to 50 guests</p>
+            </div>
+
+        </div>
+
+
+
+
+
+    </main>
+
+
+
+    <footer class="abouts">
+
+        <div class="coordonnees">
+
+            <div class="perso">
+
+                <div class="opening">
+                    <h3>Opening hours</h3>
+                    <ul>
+                        <li>Monday closed</li>
+                        <li>Tues-wed: 9am - 10 pm</li>
+                        <li>thu- friday: 9am- 10pm</li>
+                        <li>Sat - sun : 10pm - 5am</li>
+                    </ul>
+                </div>
+
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>13 christopher street</li>
+                        <li>New York</li>
+                        <li>NY 19374978-8789</li>
+                        <li>Sat - sun : 10pm - 5am</li>
+                    </ul>
+                    <p>+01 2000 800 9999</p>
+                </div>
+
+                <div class="social">
+                    <h3>Social Networks</h3>
+                    <div class="ico">
+                        <a href="" class="fab fa-facebook-f"></a>
+                        <a href="" class="fab fa-instagram"></a>
+                        <a href="" class="fab fa-youtube"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="licence">
+            <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" style="border-width:0" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a>
+            <p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par <a href="https://www.cath2nos.com">Catherine Denos
+	pas d'utilisation commerciale - pas de modification internationale</p></a>
+        </div>
+
+
+
+
+
+
+
+
+    </footer>
+
+
+    <!--on charge la bibliotheque jquery-->
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <!--charger le js du plugin slick-->
+    <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
+
+    <!--config jquery du plugin slick-->
+    <!-- Indiquer sur quel élément de la page on applique le plugin -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.slider').slick({
+                // setting - name: setting - value
+            });
+        });
+    </script>
+</body>
+
+</html>
